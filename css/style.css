@@ -1,0 +1,81 @@
+                         .banner-img{
+	background-image: url('../img/banner1.jpg');
+	background-size: cover;
+	height: 85vh; 
+	width:100%;
+	margin-top: -20px;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+	
+}
+.headding{
+	padding:-90px 0px;
+	color:#1d2056;
+	font-size:50px;
+	margin-top:-90px 0px;
+}	
+	.section1{
+		
+		color:#1d2056;
+		padding:50px 10px;
+		margin:-20px 0px;
+	}
+	.navbar{
+		background-color:#1d2056;
+		color:white;
+		}
+		.footer1{
+			background-color:#1d2056;
+			color:white;
+			}
+			.img{
+				border:2px solid black;
+				background-color:#f8e195;
+				}
+			.btn{
+				background-color:#1d2056;
+			color:white;
+			}
+								
+								
+								
+								
+								.aboutheadding{
+									color:blue;
+								}
+								
+								.main{
+									padding:15px 0px;
+								}
+								
+								
+								
+								.productbutton{
+									background-color:#1d2056;
+									color:white;
+									margin:0px 100px;
+									padding:5px 10px;
+								}
+								.head{
+									margin:-20px 0px;
+									background-color:#1d2056;
+									color:white;
+								}
+								.para{
+									font-size:50px;
+								}
+.product1{
+padding:10px;
+border:1px solid black;
+margin:10px 0px;
+background-color:#f8e195;
+color:#1d2056;	
+	
+	
+}								

@@ -1,0 +1,155 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>contact Us</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<script>
+	$.validator.setDefaults({
+		submitHandler: function() {
+			alert("submitted!");
+		}
+	});
+
+	$().ready(function() {
+		// validate the comment form when it is submitted
+		$("#contectForm").validate({
+		rules:{
+		name: {
+		required: true,
+		minlength: 5
+		},
+		email:{
+		required: true,
+		email: true
+		},
+		contact:{
+		required: true,
+		},
+		message:{
+		required: true,
+		minlength: 10
+		}
+		},
+		message:{
+		name:{
+		required: "name is required",
+		minlength:"name must be minimum of 5 characters."
+		},
+		email:{
+		required: "Email is required.",
+		email:"Enter a valid Email."
+		},
+		contact:{
+		required: "Contact is required.",
+		},
+		message:{
+		required: "Password is required",
+		minlength:"Password must be minimum of 10 characters."
+		}
+		}
+		});
+		
+		});
+</script>
+</head>
+<body>
+<div class="main">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <a class="navbar-brand " href="index.html">
+	 <div class="mylogo">
+	 <img src="img/restologo.png" height="35px" width="100px" />
+    </div></a>
+	</div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	   <li><a href="index.html"><span style="color:white">Home</span></a></li>
+		<li><a href="about.html"><span style="color:white">About</span> </a></li>
+        <li><a href="contact.html"><span style="color:white">Contact</span></a></li>
+       
+            <li><a href="product.html"><span style="color:white">products</span></a></li>
+			
+        <li><a href="register.html"><span style="color:white"> Register</span> </a></li>
+        <li><a href="login.html"> <span style="color:white">Login</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="row">
+<div class="col-md-5 col-md-offset-1">
+<div class="embed"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235527.45446938823!2d75.72376397472755!3d22.72391173166939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C+Madhya+Pradesh!5e0!3m2!1sen!2sin!4v1509070400262" width="100%" height="580" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+</div>
+<div class="myform">
+<div class="col-md-4 col-md-offset-1">
+<div class="form-group">
+<form class="contectForm" id="contectForm" method="get" action="">
+<div class="field">
+<div class="contacthead">
+<p class="contacthead"><b> Contect Form</b></p>
+</div>
+<p>
+<br>
+<label for="name"> Name :</label>
+<input id="name" class="form-control" name="name" minlength="5" type="text" required>
+</p>
+</div>
+<div class="field">
+<br>
+<p>
+<label for="email">E-Mail</label>
+<input id="email" class="form-control" type="email" name="email" required>
+</p>
+</div>
+<br>
+<div class="field">
+<p>
+<label for="contact">Contact</label>
+<input id="contact" class="form-control"  type="number" name="contact" required>
+</p>
+</div>
+<br>
+<div class="field">
+<p>
+<label for="message">Message</label>
+<textarea id="message" class="form-control"  type="text" minlength="10" name="message" required></textarea>
+</p>
+</div>
+<br>
+<p>
+<br>
+<br>
+<button class="btn">Submit
+</button>
+</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="footer1">
+<div class="row">
+<div class="col-md-5 col-md-offset-1">
+<h4><b>Develped By:-</b></h4>
+<p>Vaibhav Gangrade</p>
+<p>Surbhi Gangrade</p>
+</div>
+<div class="col-md-5 col-md-offset-1">
+<h4><b>Mobile Number:-</b></h4>
+<p>8109728281</p
+<p>8224022245</p>
+</div>
+</div> 
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

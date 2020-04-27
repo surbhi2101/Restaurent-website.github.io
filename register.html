@@ -1,0 +1,149 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<script>
+
+	$.validator.setDefaults({
+		submitHandler: function() {
+			alert("submitted!");
+		}
+	});
+
+	$().ready(function() {
+		// validate the comment form when it is submitted
+		$("#ragisterform").validate({
+		rules:{
+		firstname:{
+		required:true,
+		minlength:2
+		},
+		lastname:{
+		required:true,
+		minlength:2
+		},
+		email:{
+		required: true,
+		email: true
+		},
+		contact:{
+		required:true,
+		digit: true,
+		},
+		adress:{
+		required: true,
+		minlength: 10
+		},
+		productname:{
+		required:true,
+		},
+		message:{
+		firstname:{
+		required:"Name is must.",
+		minlength:2
+		},
+		lastname:{
+		required:"Sarname is must.",
+		minlength:2
+		},
+		email:{
+		required: "Email is required.",
+		email:"Enter a valid Email."
+		},
+		contact:{
+		required:"Contact Number is very Important.",
+		digit: true,
+		},
+		adress:{
+		required: "Address is must.",
+		minlength: 10
+		},
+		productname:{
+		required:"Please Define Product Name."
+		}
+		}
+		}
+		});
+		
+		});
+		
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  
+      <a class="navbar-brand " href="index.html">
+	 <div class="mylogo">
+	 <img src="img/restologo.png" height="35px" width="100px" />
+    </div></a>
+	
+	</div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	   <li><a href="index.html"><span style="color:white">Home</span></a></li>
+		<li><a href="about.html"><span style="color:white">About</span> </a></li>
+        <li><a href="contact.html"><span style="color:white">Contact</span></a></li>
+       
+            <li><a href="product.html"><span style="color:white">products</span></a></li>
+			
+        <li><a href="register.html"><span style="color:white"> Register</span> </a></li>
+        <li><a href="login.html"> <span style="color:white">Login</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="main">
+<div class="container">
+  <h2>Registration form:</h2>
+  <form action="">
+    <div class="form-group">
+      <label for="firstname">First Name:</label>
+<input id="firstname" class="form-control" type="text" name="firstname" required>
+       <label for="lastname">Last Name:</label>
+<input id="lastname" class="form-control" type="text" name="lastname" required>
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+<label for="contact">Contact:</label>
+	  <input type="number" class="form-control" id="contact" placeholder="Enter contact" name="contact" required>
+    <label for="adress">Address:</label>
+	  <input type="text" class="form-control" id="adress" placeholder="Enter name" name="adress" required>
+      <label for="productname">Product name:</label>
+	  <input type="text" class="form-control" id="productname" placeholder="Enter productname" name="productname" required>
+	  <label for="pwd">Quantity:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+	  <br><br>
+   <center>
+    <button type="submit" class="btn" >Submit</button></center>
+	 </div>
+  </form>
+</div>
+<div class="footer1">
+<div class="row">
+<div class="col-md-5 col-md-offset-1">
+<h4><b>Develped By:-</b></h4>
+<p>Vaibhav Gangrade</p>
+<p>Surbhi Gangrade</p>
+</div>
+<div class="col-md-5 col-md-offset-1">
+<h4><b>Mobile Number:-</b></h4>
+<p>8109728281</p
+<p>8224022245</p>
+</div>
+</div> 
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
